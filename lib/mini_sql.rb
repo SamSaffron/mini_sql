@@ -25,6 +25,10 @@ module MiniSql
       autoload :DeserializerCache, "mini_sql/postgres/deserializer_cache"
     end
 
+    module ActiveRecordPostgres
+      autoload :Connection, "mini_sql/active_record_postgres/connection"
+    end
+
     module Sqlite
       autoload :Connection, "mini_sql/sqlite/connection"
       autoload :DeserializerCache, "mini_sql/sqlite/deserializer_cache"
